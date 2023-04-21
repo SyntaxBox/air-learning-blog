@@ -1,6 +1,6 @@
 import React from "react";
 
-function Logo({ withText }: { withText?: boolean }) {
+function Logo() {
   return (
     <div className="flex items-center justify-start gap-3">
       <div>
@@ -29,7 +29,7 @@ function Logo({ withText }: { withText?: boolean }) {
           ></path>
         </svg>
       </div>
-      <p className="text-xl text-gray-700">AirLearning</p>
+      <p className="text-xl text-gray-700 dark:text-gray-300">AirBlog</p>
     </div>
   );
 }

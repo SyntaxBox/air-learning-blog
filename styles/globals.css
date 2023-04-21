@@ -1,51 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
-body {
-  font-family: Poppins, sans-serif;
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.word::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  background-image: linear-gradient(90deg, #4ade80, #10b981, #4ade80);
-  mix-blend-mode: screen;
-  animation: op 3s linear 0.2s infinite alternate;
-  -webkit-animation: op 3s linear 0.2s infinite alternate;
+body {
+  font-family: Poppins, sans-serif;
 }
 
-@keyframes op {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.dark body {
+  background-color: #0f172a;
 }
 
-.logos svg:hover path,
-.logos svg:hover rect {
-  fill: #10b981;
+.light body {
+  background-color: white;
 }
 
-.logos svg path,
-.logos svg rect {
-  transition: fill 0.1s ease-in-out;
-  -webkit-transition: fill 0.1s ease-in-out;
-  -moz-transition: fill 0.1s ease-in-out;
-  -ms-transition: fill 0.1s ease-in-out;
-  -o-transition: fill 0.1s ease-in-out;
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #22c55e;
+}
+
+::selection {
+  color: white;
+  background: #22c55e;
 }

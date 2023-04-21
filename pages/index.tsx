@@ -1,10 +1,5 @@
-import ContactUs from "@/components/ContactUs/ContactUs";
-import EmailSubmit from "@/components/EmailSubmit/EmailSubmit";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
-import PricingPlans from "@/components/PricingPlans/PricingPlans";
-import Reviews from "@/components/Reviews/Reviews";
-import ServiceFeatures from "@/components/ServiceFeatures/ServiceFeatures";
+import Hero from "@/components/Hero/Hero";
+import Navbar from "@/components/Navbar/Navbar";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,14 +11,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col gap-[90px]">
-        <Header />
-        <ServiceFeatures />
-        <Reviews />
-        <EmailSubmit />
-        <PricingPlans />
-        <ContactUs />
-        <Footer />
+      <main className="flex flex-col gap-[90px] dark:bg-slate-900">
+        <header>
+          <Navbar />
+          <Hero />
+        </header>
       </main>
     </>
   );
