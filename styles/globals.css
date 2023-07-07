@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.dark body {
+  background-color: #0f172a;
+}
+
+.light body {
+  background-color: white;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #22c55e;
+}
+
+::selection {
+  color: white;
+  background: #22c55e;
+}
