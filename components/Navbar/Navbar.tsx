@@ -45,7 +45,7 @@ function Navbar({ className }: { className?: string }) {
             </li>
             <li>
               <Link
-                href="about"
+                href="/about"
                 className="block py-2 pl-3 pr-4 text-gray-700 dark:text-gray-200 rounded md:hover:bg-transparent md:hover:text-green-500 dark:md:hover:text-green-300 md:p-0"
               >
                 About
@@ -53,7 +53,7 @@ function Navbar({ className }: { className?: string }) {
             </li>
             <li>
               <Link
-                href="services"
+                href="/services"
                 className="block py-2 pl-3 pr-4 text-gray-700 dark:text-gray-200 rounded md:hover:bg-transparent md:hover:text-green-500 dark:md:hover:text-green-300 md:p-0"
               >
                 Services
@@ -61,7 +61,7 @@ function Navbar({ className }: { className?: string }) {
             </li>
             <li>
               <Link
-                href="contact"
+                href="/contact"
                 className="block py-2 pl-3 pr-4 text-gray-700 dark:text-gray-200 rounded md:hover:bg-transparent md:hover:text-green-500 dark:md:hover:text-green-300 md:p-0"
               >
                 Contact

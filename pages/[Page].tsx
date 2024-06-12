@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -16,6 +17,9 @@ function Page() {
       <main className="flex items-center justify-center w-screen h-screen flex-col">
         <p className="font-bold text-3xl">{Page} Page</p>
         <p>Add any content You want here</p>
+        <Link className="text-green-400" href="/">
+          Go Home
+        </Link>
       </main>
     </>
   );

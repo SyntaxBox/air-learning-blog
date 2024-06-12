@@ -1,9 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 function Logo() {
   return (
-    <div className="flex items-center justify-start gap-3">
-      <div>
+    <Link href="/" className="flex items-center justify-start gap-3">
+      <span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -28,9 +29,9 @@ function Logo() {
             enableBackground="accumulate"
           ></path>
         </svg>
-      </div>
+      </span>
       <p className="text-xl text-gray-700 dark:text-gray-300">AirBlog</p>
-    </div>
+    </Link>
   );
 }
 

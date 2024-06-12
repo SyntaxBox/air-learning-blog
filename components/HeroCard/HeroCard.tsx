@@ -24,13 +24,7 @@ function HeroCard({
       href={`/post/${slug}`}
       className={`relative overflow-hidden flex items-center justify-center hero-card rounded-xl ${className}`}
     >
-      <Image
-        src={img}
-        alt={img}
-        width={1000}
-        height={1000}
-        className="absolute z-0"
-      />
+      <Image src={img} alt={img} fill className="absolute z-0 w-full h-full" />
       <div className="bg-gradient-to-t z-10 w-full from-[#000000aa] h-full flex items-end justify-start p-4">
         <div className="text-white">
           <h3 className="text-lg">{title}</h3>
