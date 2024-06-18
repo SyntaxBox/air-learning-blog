@@ -29,20 +29,10 @@ function Navbar({ className }: { className?: string }) {
           </>
         )}
         <div className="order-2 text-[22px] text-gray-700 dark:text-gray-200 md:flex gap-3 hidden">
-          <Github />
           <DarkMode />
         </div>
         <div className="hidden md:flex w-auto md:order-1" id="navbar-cta">
           <ul className="flex flex-col gap-2 p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-            <li>
-              <Link
-                href="/"
-                className="block py-2 pl-3 pr-4 text-white  rounded md:text-green-400 md:p-0"
-                aria-current="page"
-              >
-                Home
-              </Link>
-            </li>
             <li>
               <Link
                 href="/about"
@@ -65,6 +55,14 @@ function Navbar({ className }: { className?: string }) {
                 className="block py-2 pl-3 pr-4 text-gray-700 dark:text-gray-200 rounded md:hover:bg-transparent md:hover:text-green-500 dark:md:hover:text-green-300 md:p-0"
               >
                 Contact
+              </Link>
+            </li>
+             <li>
+              <Link
+                href="https://github.com/cargopip/tech-blog"
+                className="block py-2 pl-3 pr-4 text-gray-700 dark:text-gray-200 rounded md:hover:bg-transparent md:hover:text-green-400 dark:md:hover:text-green-300 md:p-0 flex items-center gap-1"
+              >
+              <Github /> Repo
               </Link>
             </li>
           </ul>
