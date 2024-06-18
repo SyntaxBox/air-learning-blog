@@ -59,7 +59,7 @@ function Navbar({ className }: { className?: string }) {
             </li>
              <li>
               <Link
-                href="https://github.com/cargopip/tech-blog"
+                href="https://github.com/cargopip/air-learning-blog"
                 className="block py-2 pl-3 pr-4 text-gray-700 dark:text-gray-200 rounded md:hover:bg-transparent md:hover:text-green-400 dark:md:hover:text-green-300 md:p-0 flex items-center gap-1"
               >
               <Github /> Repo
